@@ -7,7 +7,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
 
 setup(
     name='Math-Parser',
-    version='0.1.1',
+    version='0.1.2',
     description='This package evaluates mathematics expressions written in string safely.',
     long_description=long_description,
     long_description_content_type='text/markdown',
