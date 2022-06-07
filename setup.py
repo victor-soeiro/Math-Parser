@@ -7,7 +7,7 @@ README = (HERE / 'README.md').read_text()
 REQUIRES = (HERE / 'requirements.txt').read_text().splitlines()
 
 NAME = 'Math-Parser'
-VERSION = '0.1'
+VERSION = '0.1.1'
 DESCRIPTION = 'This package evaluates mathematics expressions written in string safely.'
 AUTHOR = 'Victor Soeiro'
 AUTHOR_EMAIL = 'victor.soeiro.araujo@gmail.com'
