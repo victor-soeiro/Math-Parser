@@ -1,30 +1,20 @@
 
-from pathlib import Path
 from setuptools import setup, find_packages
 
-HERE = Path(__file__).parent
-README = (HERE / 'README.md').read_text()
-REQUIRES = (HERE / 'requirements.txt').read_text().splitlines()
 
-NAME = 'Math-Parser'
-VERSION = '0.1.1'
-DESCRIPTION = 'This package evaluates mathematics expressions written in string safely.'
-AUTHOR = 'Victor Soeiro'
-AUTHOR_EMAIL = 'victor.soeiro.araujo@gmail.com'
-URL = 'https://github.com/victor-soeiro/Math-Parser'
-LICENSE = 'MIT'
-PYTHON_VER = '>=3.6'
+with open('README.md', 'r', encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
-    name=NAME,
-    version=VERSION,
-    description=DESCRIPTION,
-    long_description=README,
+    name='Math-Parser',
+    version='0.1.1',
+    description='This package evaluates mathematics expressions written in string safely.',
+    long_description=long_description,
     long_description_content_type='text/markdown',
-    author=AUTHOR,
-    author_email=AUTHOR_EMAIL,
-    url=URL,
-    license=LICENSE,
+    author='Victor Soeiro',
+    author_email='victor.soeiro.araujo@gmail.com',
+    url='https://github.com/victor-soeiro/Math-Parser',
+    license='MIT',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Intended Audience :: Science/Research',
@@ -32,8 +22,8 @@ setup(
         'License :: OSI Approved :: MIT License',
     ],
     packages=find_packages(),
-    install_requires=REQUIRES,
-    python_requires=PYTHON_VER,
+    install_requires=[],
+    python_requires='>=3.6',
     keywords=[
         'mathematics', 'expressions', 'compilers', 'evaluation'
     ]
